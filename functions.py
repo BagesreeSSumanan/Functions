@@ -13,8 +13,9 @@ def powerOfnumber(num, power):
         return num * powerOfnumber(num, power - 1) 
 
 def student_data(**kwargs):
-    for i in kwargs:
-        print(i,":", kwargs.get(i))
+    for key, value in kwargs.items():
+        print(key, ":", value)
+
    
 factorial(5)
 print("3 ^ 2 is", powerOfnumber(3, 2))
